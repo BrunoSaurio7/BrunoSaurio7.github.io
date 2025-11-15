@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bruno Daniel Perez Vargas - CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --card-bg: #ffffff;
+      --accent: #2563eb;
+      --text-main: #111827;
+      --text-muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.5;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .page {
+      max-width: 900px;
+      width: 100%;
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.15);
+      padding: 2.5rem 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .page {
+        padding: 3rem 3rem;
+      }
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.25rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 799px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    section {
+      margin-bottom: 1.75rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .item {
+      margin-bottom: 1.1rem;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: baseline;
+      margin-bottom: 0.1rem;
+    }
+
+    .item-title {
+      font-weight: 600;
+    }
+
+    .item-location {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .item-date {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .item-role {
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 0.35rem;
+      color: var(--text-main);
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 1.1rem;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    li + li {
+      margin-top: 0.2rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.45rem;
+    }
+
+    .tag {
+      font-size: 0.85rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      background: #f9fafb;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    @media (min-width: 600px) {
+      .skills-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .skill-block-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .skill-list {
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    .language-level {
+      font-size: 0.95rem;
+    }
+
+    .pill {
+      display: inline-block;
+      font-size: 0.78rem;
+      padding: 0.15rem 0.45rem;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      margin-left: 0.35rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Bruno Daniel Perez Vargas</h1>
+      <div class="subtitle">Computer Engineering Student</div>
+      <div class="contact">
+        <span><strong>Email:</strong> <a href="mailto:bruno.daniel.pv@gmail.com">bruno.daniel.pv@gmail.com</a></span>
+        <span><strong>Phone:</strong> (+52) 55 1302 9276</span>
+        <span>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/bruno-daniel-p%C3%A9rez-vargas-18120928b" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/bruno-daniel-pérez-vargas-18120928b
+          </a>
+        </span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Columna izquierda -->
+      <div>
+        <section id="education">
+          <h2>Education</h2>
+          <div class="item">
+            <div class="item-header">
+              <div>
+                <div class="item-title">Instituto Tecnológico Autónomo de México (ITAM)</div>
+                <div class="item-location">Mexico City</div>
+              </div>
+              <div class="item-date">2021 – Present</div>
+            </div>
+            <div class="item-role">
+              B.S. in Computer Engineering (9th semester out of 10)
+            </div>
+            <ul>
+              <li>Advanced Algorithms and Data Structures</li>
+              <li>Information Systems Analysis and Design</li>
+              <li>Software Application Development</li>
+              <li>Databases</li>
+              <li>Probability and Statistical Inference</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="experience">
+          <h2>Professional Experience</h2>
+
+          <div class="item">
+            <div class="item-header">
+              <div>
+                <div class="item-title">Philip Morris International</div>
+                <div class="item-location">Mexico City</div>
+              </div>
+              <div class="item-date">July 2025 – Present</div>
+            </div>
+            <div class="item-role">IT Data Analytics Intern</div>
+            <ul>
+              <li>Built knowledge-base infrastructure for AI agents using Amazon Bedrock.</li>
+              <li>Implemented and deployed data infrastructure with AWS (S3, CloudWatch) and Matillion.</li>
+              <li>Orchestrated data in Snowflake.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">AWS</span>
+              <span class="tag">Snowflake</span>
+              <span class="tag">Matillion</span>
+              <span class="tag">Amazon Bedrock</span>
+              <span class="tag">Data Analytics</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <div>
+                <div class="item-title">Una Palabra ITAM Podcast</div>
+                <div class="item-location">Mexico City</div>
+              </div>
+              <div class="item-date">January 2024 – Present</div>
+            </div>
+            <div class="item-role">Producer and Editor</div>
+            <ul>
+              <li>Operated video camera and audio recording equipment.</li>
+              <li>Edited video using DaVinci Resolve, After Effects, and Adobe Premiere Pro.</li>
+              <li>Edited 25+ episodes and streamlined the editing workflow.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Video Editing</span>
+              <span class="tag">DaVinci Resolve</span>
+              <span class="tag">After Effects</span>
+              <span class="tag">Adobe Premiere Pro</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <div>
+                <div class="item-title">Independent and Academic Projects</div>
+                <div class="item-location">Mexico City</div>
+              </div>
+              <div class="item-date">2024</div>
+            </div>
+
+            <div class="item-role">Database Developer · September 2024</div>
+            <ul>
+              <li>Designed and implemented a database for SME “Smokings Toscani” using SQL Server.</li>
+              <li>Digitized and optimized manual business processes.</li>
+            </ul>
+
+            <div class="item-role">Back-End and Database Developer · November 2024</div>
+            <ul>
+              <li>Designed and implemented a SQL Server database and back-end functionality in C#.</li>
+              <li>Built an application focused on locating and donating supplies during natural disasters.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">SQL Server</span>
+              <span class="tag">C#</span>
+              <span class="tag">Back-End</span>
+              <span class="tag">Database Design</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Columna derecha -->
+      <div>
+        <section id="skills">
+          <h2>Technical Skills</h2>
+          <div class="skills-grid">
+            <div>
+              <div class="skill-block-title">Programming Languages</div>
+              <div class="skill-list">
+                Python<br />
+                SQL (PostgreSQL, SQL Server)<br />
+                Java<br />
+                C#<br />
+                Matlab
+              </div>
+            </div>
+            <div>
+              <div class="skill-block-title">Tools &amp; Technologies</div>
+              <div class="skill-list">
+                Pandas<br />
+                Microsoft Excel<br />
+                Databases<br />
+                Web Development<br />
+                Data Analysis<br />
+                UX Design<br />
+                AWS<br />
+                Snowflake
+              </div>
+            </div>
+            <div>
+              <div class="skill-block-title">Soft Skills</div>
+              <div class="skill-list">
+                Teamwork<br />
+                Fast Learner<br />
+                Creativity<br />
+                Problem Solving
+              </div>
+            </div>
+            <div>
+              <div class="skill-block-title">Other</div>
+              <div class="skill-list">
+                Microsoft Office<br />
+                Visual Basic<br />
+                Agile methodologies<br />
+                Amazon Bedrock
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="languages">
+          <h2>Languages</h2>
+          <div class="item">
+            <div class="language-level">
+              English: Advanced (Estimated C1)
+              <span class="pill">Strong oral and written comprehension</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
