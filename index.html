@@ -137,6 +137,22 @@
       margin-bottom: 0.35rem;
       color: var(--text-main);
     }
+    
+    .item-sub-role {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      margin-bottom: 0.25rem;
+      color: var(--text-main);
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .item-sub-date {
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+    }
 
     ul {
       list-style: disc;
@@ -190,6 +206,7 @@
 
     .language-level {
       font-size: 0.95rem;
+      margin-bottom: 0.5rem;
     }
 
     .pill {
@@ -214,14 +231,19 @@
         <span>
           <strong>LinkedIn:</strong>
           <a href="https://www.linkedin.com/in/bruno-daniel-p%C3%A9rez-vargas-18120928b" target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/bruno-daniel-pérez-vargas-18120928b
+            Profile
+          </a>
+        </span>
+         <span>
+          <strong>GitHub:</strong>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            Profile
           </a>
         </span>
       </div>
     </header>
 
     <main>
-      <!-- Columna izquierda -->
       <div>
         <section id="education">
           <h2>Education</h2>
@@ -259,38 +281,15 @@
             </div>
             <div class="item-role">IT Data Analytics Intern</div>
             <ul>
-              <li>Built knowledge-base infrastructure for AI agents using Amazon Bedrock.</li>
+              <li>Built Knowledge-base infrastructure for AI agents using Amazon Bedrock API.</li>
               <li>Implemented and deployed data infrastructure with AWS (S3, CloudWatch).</li>
               <li>Orchestrated data in Matillion.</li>
             </ul>
             <div class="tags">
               <span class="tag">AWS</span>
-              <span class="tag">Snowflake</span>
-              <span class="tag">Matillion</span>
               <span class="tag">Amazon Bedrock</span>
-              <span class="tag">Data Analytics</span>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="item-header">
-              <div>
-                <div class="item-title">Una Palabra ITAM Podcast</div>
-                <div class="item-location">Mexico City</div>
-              </div>
-              <div class="item-date">January 2024 – Present</div>
-            </div>
-            <div class="item-role">Producer and Editor</div>
-            <ul>
-              <li>Operated video camera and audio recording equipment.</li>
-              <li>Edited video using DaVinci Resolve, After Effects, and Adobe Premiere Pro.</li>
-              <li>Edited 25+ episodes and streamlined the editing workflow.</li>
-            </ul>
-            <div class="tags">
-              <span class="tag">Video Editing</span>
-              <span class="tag">DaVinci Resolve</span>
-              <span class="tag">After Effects</span>
-              <span class="tag">Adobe Premiere Pro</span>
+              <span class="tag">Matillion</span>
+              <span class="tag">Snowflake</span>
             </div>
           </div>
 
@@ -300,31 +299,53 @@
                 <div class="item-title">Independent and Academic Projects</div>
                 <div class="item-location">Mexico City</div>
               </div>
-              <div class="item-date">2024</div>
+              </div>
+
+            <div class="item-sub-role">
+                SOA Software Architect & Developer
+                <span class="item-sub-date">December 2025</span>
+            </div>
+            <ul>
+              <li>Orchestrated Inventory, Credit, and Shipping services using Java, BPEL 2.0, and OpenESB.</li>
+              <li>Implemented fault compensation logic for distributed transactions and validated system resilience via custom multi-threaded stress testing.</li>
+            </ul>
+             <div class="tags">
+              <span class="tag">Java</span>
+              <span class="tag">BPEL 2.0</span>
+              <span class="tag">OpenESB</span>
             </div>
 
-            <div class="item-role">Database Developer · September 2024</div>
+            <div class="item-sub-role">
+                Full Stack Developer
+                <span class="item-sub-date">August 2025</span>
+            </div>
             <ul>
-              <li>Designed and implemented a database for SME “Smokings Toscani” using SQL Server.</li>
-              <li>Digitized and optimized manual business processes.</li>
+              <li>Modernized business workflows for SME 'Smokings Toscani' using Node.js and Supabase.</li>
+              <li>Transformed manual process into a real-time digital dashboard, improving data accuracy and operational efficiency.</li>
             </ul>
+             <div class="tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Full Stack</span>
+            </div>
 
-            <div class="item-role">Back-End and Database Developer · November 2024</div>
+            <div class="item-sub-role">
+                Back-End and Database Developer
+                <span class="item-sub-date">November 2024</span>
+            </div>
             <ul>
-              <li>Designed and implemented a SQL Server database and back-end functionality in C#.</li>
-              <li>Built an application focused on locating and donating supplies during natural disasters.</li>
+              <li>Engineered a robust SQL Server database and C# backend for a disaster relief platform.</li>
+              <li>Optimized queries for real-time geolocation of supplies, ensuring data integrity under high-demand scenarios.</li>
             </ul>
             <div class="tags">
               <span class="tag">SQL Server</span>
               <span class="tag">C#</span>
               <span class="tag">Back-End</span>
-              <span class="tag">Database Design</span>
             </div>
           </div>
         </section>
       </div>
 
-      <!-- Columna derecha -->
       <div>
         <section id="skills">
           <h2>Technical Skills</h2>
@@ -333,23 +354,24 @@
               <div class="skill-block-title">Programming Languages</div>
               <div class="skill-list">
                 Python<br />
-                SQL (PostgreSQL, SQL Server)<br />
+                SQL<br />
                 Java<br />
                 C#<br />
+                C++<br />
+                Node.js<br />
                 Matlab
               </div>
             </div>
             <div>
               <div class="skill-block-title">Tools &amp; Technologies</div>
               <div class="skill-list">
-                Pandas<br />
-                Microsoft Excel<br />
-                Databases<br />
-                Web Development<br />
-                Data Analysis<br />
-                UX Design<br />
                 AWS<br />
-                Snowflake
+                Snowflake<br />
+                Matillion<br />
+                OpenESB<br />
+                Supabase<br />
+                Pandas<br />
+                Excel
               </div>
             </div>
             <div>
@@ -364,10 +386,10 @@
             <div>
               <div class="skill-block-title">Other</div>
               <div class="skill-list">
-                Microsoft Office<br />
-                Visual Basic<br />
                 Agile methodologies<br />
-                Amazon Bedrock
+                Data Analysis<br />
+                UX Design<br />
+                Data orchestration
               </div>
             </div>
           </div>
@@ -378,7 +400,10 @@
           <div class="item">
             <div class="language-level">
               English: Advanced (Estimated C1)
-              <span class="pill">Strong oral and written comprehension</span>
+              <span class="pill">Strong oral and written</span>
+            </div>
+             <div class="language-level">
+              Spanish: Native
             </div>
           </div>
         </section>
@@ -387,4 +412,3 @@
   </div>
 </body>
 </html>
-
